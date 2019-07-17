@@ -15,7 +15,7 @@ public class ModelToSQL {
 
     // ObjectYoSQL
     public void toSQL() {
-        this.setSql("insert into newCompanyInformation(enterpriseName, contact, `_call`, industry, theNatureOfTheBusiness, sizeOfTheEnterprise, registrationDate, corporateBenefits, businessAddress, introduced) value (\'"
+        this.setSql("insert into newCompanyInformation(enterpriseName, contact, _call, industry, theNatureOfTheBusiness, sizeOfTheEnterprise, registrationDate, corporateBenefits, businessAddress, introduced) value (\'"
                 + this.getNewCompanyInformation().getEnterpriseName() + "\', \'"
                 + this.getNewCompanyInformation().getContact() + "\',\'"
                 + this.getNewCompanyInformation().getCall() + "\', \'"

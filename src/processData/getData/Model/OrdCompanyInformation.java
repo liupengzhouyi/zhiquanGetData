@@ -11,11 +11,12 @@ public class OrdCompanyInformation {
     private String G;
     private String H;
     private String I;
+    private String J;
 
     public OrdCompanyInformation() {
     }
 
-    public OrdCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h, String i) {
+    public OrdCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h, String i, String j) {
         A = a;
         B = b;
         C = c;
@@ -25,6 +26,7 @@ public class OrdCompanyInformation {
         G = g;
         H = h;
         I = i;
+        J = j;
     }
 
     public String getA() {
@@ -99,6 +101,14 @@ public class OrdCompanyInformation {
         I = i;
     }
 
+    public String getJ() {
+        return J;
+    }
+
+    public void setJ(String j) {
+        J = j;
+    }
+
     @Override
     public String toString() {
         return "OrdCompanyInformation{" +
@@ -111,6 +121,7 @@ public class OrdCompanyInformation {
                 ", G='" + G + '\'' +
                 ", H='" + H + '\'' +
                 ", I='" + I + '\'' +
+                ", J='" + J + '\'' +
                 '}';
     }
 }

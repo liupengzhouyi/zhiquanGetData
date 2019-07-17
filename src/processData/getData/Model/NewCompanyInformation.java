@@ -29,10 +29,22 @@ public class NewCompanyInformation {
     // 企业地址
     private String businessAddress;
 
+    // 介绍
+    private String introduced;
+
     public NewCompanyInformation() {
     }
 
-    public NewCompanyInformation(String enterpriseName, String contact, String call, String industry, String theNatureOfTheBusiness, String sizeOfTheEnterprise, String registrationDate, String corporateBenefits, String businessAddress) {
+    public NewCompanyInformation(String enterpriseName,
+                                 String contact,
+                                 String call,
+                                 String industry,
+                                 String theNatureOfTheBusiness,
+                                 String sizeOfTheEnterprise,
+                                 String registrationDate,
+                                 String corporateBenefits,
+                                 String businessAddress,
+                                 String introduced) {
         this.enterpriseName = enterpriseName;
         this.contact = contact;
         this.call = call;
@@ -42,6 +54,7 @@ public class NewCompanyInformation {
         this.registrationDate = registrationDate;
         this.corporateBenefits = corporateBenefits;
         this.businessAddress = businessAddress;
+        this.introduced = introduced;
     }
 
     public String getEnterpriseName() {
@@ -116,6 +129,14 @@ public class NewCompanyInformation {
         this.businessAddress = businessAddress;
     }
 
+    public String getIntroduced() {
+        return introduced;
+    }
+
+    public void setIntroduced(String introduced) {
+        this.introduced = introduced;
+    }
+
     @Override
     public String toString() {
         return "NewCompanyInformation{" +
@@ -128,6 +149,7 @@ public class NewCompanyInformation {
                 ", registrationDate='" + registrationDate + '\'' +
                 ", corporateBenefits='" + corporateBenefits + '\'' +
                 ", businessAddress='" + businessAddress + '\'' +
+                ", introduced='" + introduced + '\'' +
                 '}';
     }
 }

@@ -14,6 +14,21 @@ public class Converter {
     public Converter(OrdCompanyInformation ordCompanyInformation) {
         this.ordCompanyInformation = ordCompanyInformation;
         this.newCompanyInformation = new NewCompanyInformation();
+        this.mount();
+    }
+
+    // 挂载功能
+    public void mount() {
+        this.createBusinessAddress();
+        this.createCall();
+        this.createContact();
+        this.createCorporateBenefits();
+        this.createEnterpriseName();
+        this.createTheNatureOfTheBusiness();
+        this.createIntroduced();
+        this.createIndustry();
+        this.createSizeOfTheEnterprise();
+        this.createRegistrationDate();
     }
 
     // 企业名称

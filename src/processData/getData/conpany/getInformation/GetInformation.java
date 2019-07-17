@@ -1,9 +1,11 @@
 package processData.getData.conpany.getInformation;
 
 import linkDatabase.LinkMySQL8016.GetData;
-import processData.getData.Model.NewCompanyInformation;
-import processData.getData.Model.OrdCompanyInformation;
+
 import processData.getData.conpany.getInformationIpml.GetInformationIpml;
+import processData.operrationData.model.Converter;
+import processData.operrationData.model.NewCompanyInformation;
+import processData.operrationData.model.OrdCompanyInformation;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -37,7 +39,7 @@ public class GetInformation  implements GetInformationIpml {
     }
 
     @Override
-    public List<OrdCompanyInformation> ordCompanyList() throws SQLException {
+    public List<processData.operrationData.model.OrdCompanyInformation> ordCompanyList() throws SQLException {
         List<OrdCompanyInformation> list = new ArrayList<OrdCompanyInformation>();
         while(this.getResultSet().next()) {
             String A = this.getResultSet().getString("A");
@@ -57,8 +59,20 @@ public class GetInformation  implements GetInformationIpml {
     }
 
     @Override
-    public List<NewCompanyInformation> newCompanyList() {
-        return null;
+    public List<processData.operrationData.model.NewCompanyInformation> newCompanyList() throws SQLException {
+
+        List<OrdCompanyInformation> ordList = this.ordCompanyList();
+
+        List<NewCompanyInformation> newList = new ArrayList<NewCompanyInformation>();
+
+        Converter converter;
+
+        for (OrdCompanyInformation ordCompanyInformation : ordList) {
+            NewCompanyInformation newCompanyInformation = new Converter(ordCompanyInformation).getNewCompanyInformation();
+            newList.add(newCompanyInformation);
+        }
+
+        return newList;
     }
 
     public GetData getGetData() {

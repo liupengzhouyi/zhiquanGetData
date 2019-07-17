@@ -1,6 +1,6 @@
 package processData.getData.Model;
 
-public class newCompanyInformation {
+public class NewCompanyInformation {
 
     // 企业名称
     private String enterpriseName;
@@ -103,7 +103,7 @@ public class newCompanyInformation {
 
     @Override
     public String toString() {
-        return "newCompanyInformation{" +
+        return "NewCompanyInformation{" +
                 "enterpriseName='" + enterpriseName + '\'' +
                 ", contact='" + contact + '\'' +
                 ", call='" + call + '\'' +

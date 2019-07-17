@@ -1,6 +1,6 @@
 package processData.getData.Model;
 
-public class ordCompanyInformation {
+public class OrdCompanyInformation {
 
     private String A;
     private String B;
@@ -11,7 +11,7 @@ public class ordCompanyInformation {
     private String G;
     private String H;
 
-    public ordCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h) {
+    public OrdCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h) {
         this.setA(a);
         this.setB(b);
         this.setC(c);
@@ -88,7 +88,7 @@ public class ordCompanyInformation {
 
     @Override
     public String toString() {
-        return "ordCompanyInformation{" +
+        return "OrdCompanyInformation{" +
                 "A='" + A + '\'' +
                 ", B='" + B + '\'' +
                 ", C='" + C + '\'' +

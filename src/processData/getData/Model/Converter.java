@@ -83,6 +83,13 @@ public class Converter {
         string = string.replaceAll("企业地址：", "");
         this.getNewCompanyInformation().setBusinessAddress(string);
     }
+
+    // 介绍
+    public void createIntroduced() {
+        String string = this.getOrdCompanyInformation().getJ();
+        //string = string;
+        this.getNewCompanyInformation().setIntroduced(string);
+    }
     
     public OrdCompanyInformation getOrdCompanyInformation() {
         return ordCompanyInformation;

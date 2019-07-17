@@ -4,6 +4,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.sql.SQLException;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class GetInformationTest {
@@ -37,7 +40,13 @@ public class GetInformationTest {
     }
 
     @Test
-    public void ordCompanyList() {
+    public void ordCompanyList() throws SQLException {
+
+        List<processData.getData.Model.OrdCompanyInformation> list = this.getGetInformation().ordCompanyList();
+
+        processData.getData.Model.OrdCompanyInformation ordCompanyInformation = list.get(56);
+
+        System.out.print(ordCompanyInformation.toString());
     }
 
     @Test

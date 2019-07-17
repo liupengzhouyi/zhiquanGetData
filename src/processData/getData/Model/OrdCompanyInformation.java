@@ -10,16 +10,18 @@ public class OrdCompanyInformation {
     private String F;
     private String G;
     private String H;
+    private String I;
 
-    public OrdCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h) {
-        this.setA(a);
-        this.setB(b);
-        this.setC(c);
-        this.setD(d);
-        this.setE(e);
-        this.setF(f);
-        this.setG(g);
-        this.setH(h);
+    public OrdCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h, String i) {
+        A = a;
+        B = b;
+        C = c;
+        D = d;
+        E = e;
+        F = f;
+        G = g;
+        H = h;
+        I = i;
     }
 
     public String getA() {
@@ -86,6 +88,14 @@ public class OrdCompanyInformation {
         H = h;
     }
 
+    public String getI() {
+        return I;
+    }
+
+    public void setI(String i) {
+        I = i;
+    }
+
     @Override
     public String toString() {
         return "OrdCompanyInformation{" +
@@ -97,6 +107,7 @@ public class OrdCompanyInformation {
                 ", F='" + F + '\'' +
                 ", G='" + G + '\'' +
                 ", H='" + H + '\'' +
+                ", I='" + I + '\'' +
                 '}';
     }
 }

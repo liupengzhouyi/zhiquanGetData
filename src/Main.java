@@ -12,20 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
 
-        GetInformation getInformation = new GetInformation("select * from companyinformation;");
 
-        List<NewCompanyInformation> list = getInformation.newCompanyList();
-
-        SaveData saveData;
-
-        List<String> sqlList = new ArrayList<String>();
-
-        for (NewCompanyInformation newCompanyInformation : list) {
-            String sql = new ModelToSQL(newCompanyInformation).getSql();
-            sqlList.add(sql);
-        }
-
-        new SaveListSQL(sqlList);
 
     }
 }

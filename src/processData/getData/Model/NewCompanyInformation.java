@@ -29,6 +29,21 @@ public class NewCompanyInformation {
     // 企业地址
     private String businessAddress;
 
+    public NewCompanyInformation() {
+    }
+
+    public NewCompanyInformation(String enterpriseName, String contact, String call, String industry, String theNatureOfTheBusiness, String sizeOfTheEnterprise, String registrationDate, String corporateBenefits, String businessAddress) {
+        this.enterpriseName = enterpriseName;
+        this.contact = contact;
+        this.call = call;
+        this.industry = industry;
+        this.theNatureOfTheBusiness = theNatureOfTheBusiness;
+        this.sizeOfTheEnterprise = sizeOfTheEnterprise;
+        this.registrationDate = registrationDate;
+        this.corporateBenefits = corporateBenefits;
+        this.businessAddress = businessAddress;
+    }
+
     public String getEnterpriseName() {
         return enterpriseName;
     }

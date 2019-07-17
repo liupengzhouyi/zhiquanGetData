@@ -12,6 +12,9 @@ public class OrdCompanyInformation {
     private String H;
     private String I;
 
+    public OrdCompanyInformation() {
+    }
+
     public OrdCompanyInformation(String a, String b, String c, String d, String e, String f, String g, String h, String i) {
         A = a;
         B = b;

@@ -8,10 +8,12 @@ public class Converter {
    
 
     public Converter() {
+        this.newCompanyInformation = new NewCompanyInformation();
     }
 
     public Converter(OrdCompanyInformation ordCompanyInformation) {
         this.ordCompanyInformation = ordCompanyInformation;
+        this.newCompanyInformation = new NewCompanyInformation();
     }
 
     // 企业名称
